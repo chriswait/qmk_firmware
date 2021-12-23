@@ -5,4 +5,5 @@ COMMAND_ENABLE = no
 MOUSEKEY_ENABLE = no
 STENO_ENABLE = yes
 KEYBOARD_SHARED_EP = yes
+AUDIO_DRIVER = dac_additive
 SRC = matrix.c
