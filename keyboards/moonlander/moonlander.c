@@ -412,13 +412,14 @@ void keyboard_post_init_kb(void) {
 
 #if defined(AUDIO_ENABLE) && defined(MUSIC_MAP)
 // clang-format off
+// When MU_MODE is chromatic, this gives us a harpeji layout (leaving out the bottom row)
 const uint8_t music_map[MATRIX_ROWS][MATRIX_COLS] = LAYOUT_moonlander(
-    58, 59, 60, 61, 62, 63, 64,    65, 66, 67, 68, 69, 70, 71,
-    44, 45, 46, 47, 48, 49, 50,    51, 52, 53, 54, 55, 56, 57,
-    30, 31, 32, 33, 34, 35, 36,    37, 38, 39, 40, 41, 42, 43,
-    18, 19, 20, 21, 22, 23,            24, 25, 26, 27, 28, 29,
-     8,  9, 10, 11, 12,      3,     4,     13, 14, 15, 16, 17,
-                     0,  1,  2,     5,  6,  7
+    3, 5, 7, 9, 11, 13, 15,        17, 19, 21, 23, 25, 27, 29,
+    2, 4, 6, 8, 10, 12, 14,        16, 18, 20, 22, 24, 26, 28,
+    1, 3, 5, 7, 9, 11, 13,         15, 17, 19, 21, 23, 25, 27,
+    0, 2, 4, 6, 8, 10,                 16, 18, 20, 22, 24, 26,
+    0, 0, 0, 0, 0,   12,          14,   0, 0, 0, 0, 0,
+                  0, 0, 0,    0, 0, 0
 );
 // clang-format on
 #endif
