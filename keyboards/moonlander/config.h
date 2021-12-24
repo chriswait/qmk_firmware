@@ -118,3 +118,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define FIRMWARE_VERSION_SIZE 17
 #define DYNAMIC_KEYMAP_EEPROM_ADDR (EECONFIG_SIZE + FIRMWARE_VERSION_SIZE)
+
+#define AUDIO_PIN A5
+#define AUDIO_PIN_ALT A4
+#define AUDIO_PIN_ALT_AS_NEGATIVE
